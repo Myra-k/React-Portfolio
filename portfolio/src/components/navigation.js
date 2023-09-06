@@ -1,6 +1,9 @@
 import {useState, useEffect} from "react";
 import {Navbar, Container} from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/images/logo.svg';
+import navIcon1 from '../assets/images/linkedIn.svg';
+import navIcon2 from '../assets/images/instagram.svg';
+import navIcon3 from '../assets/images/facebook.svg';
 
 export const navigation = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -40,9 +43,9 @@ export const navigation = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="#"><img src={instagram} alt="" /></a>
+                <a href="#"><img src={linkedin} alt="" /></a>
+                <a href="#"><img src={facebook} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let's Connect</span></button>
