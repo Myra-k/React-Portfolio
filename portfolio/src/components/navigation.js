@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import {Navbar, Container} from "react-bootstrap";
+import logo from '../assets/img/logo.svg';
 
 export const navigation = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -21,7 +22,7 @@ export const navigation = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
-  
+
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
